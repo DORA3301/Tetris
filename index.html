@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Tetris</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tetris JS" />
+    <meta name="author" content="Edis Doric" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Javascript -->
+    <script src="./assets/js/loop.js"></script>
+    <script src="./assets/js/tetris.js"></script>
+
+    <script src="./assets/js/grid.js"></script>
+    <script src="./assets/js/shape.js"></script>
+    <script src="./assets/js/key.js"></script>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <h1 class="title shadow">TETRIS</h1>
+    <div><div id="container" class="shadow"></div></div>
+
+    <a href="https://edis-doric-portfolio.netlify.app/" target="_blank">By Edis Doric</a>
+
+    <div class="instructions" id="modal">
+      <strong>Keys</strong>
+      <p>Left: Move Left</p>
+      <p>Right: Move Left</p>
+      <p>Up: Rotate Shape</p>
+      <p>Down: Accelerate Fall</p>
+    </div>
+
+    <script>
+      var tetris = new Tetris();
+      document.getElementById("container");
+      tetris.create(container);
+    </script>
+  </body>
+</html>
